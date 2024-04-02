@@ -147,9 +147,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "September 2023 - January 2024",
     points: [
-      "Conducted object detection training using YOLOX models on a custom dataset to enhance the SMRT system across various scenarios, reduced passing time though gate by 20%.",
-      "Executed customized training on YOLOv models and conversion of data formats between Cocojson and txt, improved accuracy by 72%.",
-      "Developed scripts for continuous testing model on videos in 48 hours, involving video input, frame extraction with customised fps rate, timestamp marking, YOLO object detection, result logging in a timestamped txt file.",
+      "Built and continuously optimized algorithm solutions in product profiling construction &amp; product information quality improvement etc. to accelerate supply operational efficiencies in global e-commerce markets",
+      "Optimized fundamental algorithms of unified product representations to further improve traffic efficiencies in global e-commerce markets",
+      "Maintained and improved the robustness, stability and computational efficiencies of algorithm solutions in a live business environment",
     ],
   },
   {
