@@ -3,5 +3,5 @@
    <div align="center">
      This project involve Javascript, Tailwind, HTML, CSS, Node.JS, React.
     </div>
-    See my portfolio through this link: https://bit.ly/4cHCxgM
+    <div align = "center">See my portfolio through this link: https://bit.ly/4cHCxgM</div>
 
