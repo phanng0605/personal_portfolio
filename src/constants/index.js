@@ -37,7 +37,11 @@ import {
   tensorflow,
   sql,
   c,
-  cpp
+  cpp,
+  stock,
+  homepage,
+  spotifan1,
+  airst,
 } from "../assets";
 
 export const navLinks = [
@@ -137,7 +141,20 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2024 - December 2024",
     points: [
-      "Developed Algorithm for TikTok's E-Commerce Platform",
+      "Developed and optimized algorithmic solutions for product profiling, focusing on attribute normalization models, achieving an 89\% accuracy rate. This model is currently deployed in the recommendation production line.",
+      "Optimised algorithms for unified product representations by constructing a new algorithm utilizing an embedding model and fine-tuning with Siamese network using triplet loss, achieving a 91\% accuracy rate.",
+      "Maintained \& improved robustness, stability and computational efficiencies of algorithm solutions in live business.",
+    ],
+  },
+  {
+    title: "Stock Trader",
+    company_name: "Self-Employed",
+    icon: stock,
+    iconBg: "#FFFFFF",
+    date: "March 2024 - Jul 2024",
+    points: [
+      "Developed and backtested over 10 quantitative trading strategies (alphas) using historical data and Python pyfolio, backtrader, yfinance libraries, with return of over 70\% and a Sharpe ratio exceeding 3.0 across multiple strategies.",
+      "Constructed diversifed portfolio with over 10 stocks in the US market, including prominent tickers (NVDA, AAPL, etc.) and gained over \$300 profit with original \$700 fund invested through online broker.",
     ],
   },
   {
@@ -147,9 +164,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "September 2023 - January 2024",
     points: [
-      "Built and continuously optimized algorithm solutions in product profiling construction &amp; product information quality improvement etc. to accelerate supply operational efficiencies in global e-commerce markets",
-      "Optimized fundamental algorithms of unified product representations to further improve traffic efficiencies in global e-commerce markets",
-      "Maintained and improved the robustness, stability and computational efficiencies of algorithm solutions in a live business environment",
+      "Conducted object detection training using YOLOX models on a custom dataset to enhance the SMRT system across various scenarios, reducing gate passing time by 20\%.",
+      "Executed training on YOLOv models and data conversion between CocoJSON and TXT, achieved 72\% accuracy.",
+      "Developed scripts for continuous model testing on videos within 48 hours, including video input, frame extraction at a customized FPS rate, timestamp marking, YOLO object detection, and result logging in a timestamped TXT file.",
     ],
   },
   {
@@ -159,21 +176,22 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "May 2023 - September 2023",
     points: [
-      "Researched on project of ”Question Tagging using Knowledge and Casual Inference” with Dr. Zhou Nina.",
-      "Analysed and evaluated various Language Model Models (LLMs), including LLaMa, Alpaca-Lora, and RoBERTa. Conducted local loading and testing of models with personal data, requiring data cleaning and preprocessing.",
-      "Constructed text sentiment analysis model using Sentence-Transformer (SBERT) to map question text with outcomes and topics, achieved accuracy of 70%.",
+      "Researched project 'Question Tagging using Knowledge and Causal Inference' under guidance of Dr. Zhou Nina.",
+      "Analyzed and evaluated Language Models (LLMs), including LLaMa, Alpaca-Lora, and RoBERTa, by conducting local loading and testing with personal data, which involved data cleaning and preprocessing.",
+      "Constructed text sentiment analysis model using Sentence-Transformer (SBERT) to map question text with outcomes and topics, achieved accuracy of 86%.",
       "Fine-tuned pre-trained cross/bi-encoders to training models from scratch with customized data.",
     ],
   },
   {
     title: "Student Research Assistant",
     company_name: "Nanyang Technological University",
-    icon: ntuvn,
+    icon: ntu,
     iconBg: "#FFFFFF",
     date: "May 2023 - September 2023",
     points: [
-      "Collected and analysed traffic data on-site through manual methods and video recording, organizing and labelling over 2000 pictures.",
-      "Modified YOLOv5, adapting model to generate both object bounding boxes and re-identification (re-id) features. Involved adjusting loss functions, data loaders, and the YOLOv5 network.",
+      "Conducted onsite traffic data collection utilizing manual counting and video surveillance methodologies.",
+      "Processed, analyzed, and annotated over 2000 images extracted from video footage in Pick-Up and Drop-Off zones.",
+      "Enhanced the YOLOv5 architecture to output object bounding boxes and re-identification attributes by refactoring loss functions, data loaders, network configurations of YOLOv5, achieve over 80\% accuracy with 0.8 IoU threshold."
     ],
   },
 ];
@@ -232,6 +250,60 @@ const projects = [
     source_code_link: "https://github.com/phanng0605/facialDetectionWithDatabase",
   },
   {
+    name: "Spotify Clone",
+    description:
+      "This is a Spotify clone using Typescript, React for FE and BE development and Supabase for database management.",
+    tags: [
+      {
+        name: "React",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: spotifan1,
+    source_code_link: "https://spotify-clone-blush-five-56.vercel.app/",
+  },
+  {
+    name: "AIRST - research paper summarization",
+    description:
+      "This AI tool app built on Streamlit library provides a user-friendly tool for accessing key information from academic literature.",
+    tags: [
+      {
+        name: "Streamlit",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "NLP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Summarization",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "LLMs",
+        color: "blue-text-gradient",
+      },
+      // {
+      //   name: "Heroku",
+      //   color: "purple-text-gradient"
+      // }
+    ],
+    image: airst,
+    source_code_link: "https://github.com/pvhuwung/AIRST-research-paper-summarization",
+  },
+  {
     name: "PyTorch Transformer",
     description:
       "This is my implementation of Transformer using Pytorch from scratch, going through the Encoder-Decoder structure.",
@@ -280,6 +352,35 @@ const projects = [
     ],
     image: mlopsprj,
     source_code_link: "https://github.com/phanng0605/MLOps_Spam_Detections",
+  },
+  {
+    name: "RentLah!",
+    description:
+      "RentLah! provides a user friendly platform streamline the rental process, making it easier for our users to find a perfect home.",
+    tags: [
+      {
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "blue-text-gradient",
+      },
+      // {
+      //   name: "Heroku",
+      //   color: "purple-text-gradient"
+      // }
+    ],
+    image: homepage,
+    source_code_link: "https://github.com/phanng0605/RentLah",
   },
 ];
 

@@ -33,6 +33,7 @@ import python from "./tech/python.png"
 
 import meta from "./company/meta.png";
 import tiktok from "./company/tiktok.png";
+import stock from "./company/stock.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import ntu from "./company/ntu.png";
@@ -46,7 +47,9 @@ import pytorchprj from "./pytorchprj.png"
 import tripguide from "./tripguide.png";
 import mlopsprj from "./mlopsprj.png";
 import faceregprj from "./faceregprj.png";
-
+import homepage from "./homepage.jpg";
+import spotifan1 from "./spotifan1.png";
+import airst from "./airst.jpeg";
 export {
   logo,
   backend,
@@ -93,4 +96,8 @@ export {
   c,
   cpp,
   java,
+  stock,
+  homepage,
+  spotifan1,
+  airst
 };
