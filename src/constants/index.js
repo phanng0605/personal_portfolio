@@ -44,10 +44,14 @@ import {
   airst,
 } from "../assets";
 
-export const navLinks = [
+const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "work",
@@ -92,6 +96,10 @@ const technologies = [
     icon: javascript,
   },
   {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
     name: "c",
     icon: c,
   },
@@ -133,7 +141,56 @@ const technologies = [
   },
 ];
 
+const education = [
+  {
+    school: "Rice University",
+    degree: "Bachelor of Science in Computer Science",
+    location: "Houston, USA",
+    date: "Jan 2025 - June 2025",
+    icon: web,
+    iconBg: "#FFFFFF",
+    points: [
+      "Courses: Machine Learning, Natural Language Processing, Cryptography, Internet of Things, Computer Security.",
+    ],
+  },
+  {
+    school: "Nanyang Technological University",
+    degree: "Bachelor of Computing in Computer Science & Minor in Risk Analytics",
+    location: "Singapore",
+    date: "June 2022 - June 2026",
+    icon: ntu,
+    iconBg: "#FFFFFF",
+    points: [
+      "Courses: Investment Management with Python and Machine Learning, Deep Learning Specialization, Google Professional Data Analytics, Excel Skills for Data Analytics and Visualization, Visual & Predictive Technique.",
+      "ASEAN Undergraduate Scholarship (full-ride, four-year program) awarded by Singapore's Ministry of Education.",
+    ],
+  },
+];
+
 const experiences = [
+  {
+    title: "Algorithm Engineer",
+    company_name: "TikTok (ByteDance)",
+    icon: tiktok,
+    iconBg: "#383E56",
+    date: "August 2026 - Present",
+    points: [
+      "Engineered an agentic pipeline to automate the evaluation of shoppable photos for TikTok Shop, implementing multi-stage model distillation and automated rubric optimization, achieving pass precision over 98\% to ensure the quality of user-facing shoppable photos.",
+      "Trained and deployed an in-house model for product consistency evaluation using SFT, GRPO, and DAPO pipelines, achieving 96\% precision and 70\% recall.",
+    ],
+  },
+  {
+    title: "Algorithm Engineer Intern",
+    company_name: "TikTok (ByteDance)",
+    icon: tiktok,
+    iconBg: "#383E56",
+    date: "May 2025 - May 2026",
+    points: [
+      "Deployed a brand recognition model for new TikTok Shop markets (EU, LATAM), achieving 90\%+ precision, recall, and accuracy using a two-step (SFT LoRA + GRPO MLLM) training strategy, and automated the entire workflow via a custom pipeline for data preparation, annotation, training, and evaluation to enable rapid generalization to new countries.",
+      "Engineered an attribute recognition model for TikTok Shop by fine-tuning Multimodal LLMs (MLLM) via Supervised Fine-Tuning (SFT); achieved 90\% accuracy, significantly improving product data representation and search relevance on the For You Page.",
+      "Developed and deployed an MLLM-powered automation framework for B-end quality assessments, reducing BPO costs and accelerating algorithm deployment. This pipeline achieved 92\% end-to-end accuracy (a 10\% precision uplift over baseline) by fine-tuning MLLMs (e.g., QwenVL2.5) with Group Relative Policy Optimization (GRPO).",
+    ],
+  },
   {
     title: "Algorithm Engineer Intern",
     company_name: "TikTok (ByteDance)",
@@ -141,25 +198,14 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2024 - December 2024",
     points: [
-      "Developed and optimized algorithmic solutions for product profiling, focusing on attribute normalization models, achieving an 89\% accuracy rate. This model is currently deployed in the recommendation production line.",
-      "Optimised algorithms for unified product representations by constructing a new algorithm utilizing an embedding model and fine-tuning with Siamese network using triplet loss, achieving a 91\% accuracy rate.",
-      "Maintained \& improved robustness, stability and computational efficiencies of algorithm solutions in live business.",
-    ],
-  },
-  {
-    title: "Stock Trader",
-    company_name: "Self-Employed",
-    icon: stock,
-    iconBg: "#FFFFFF",
-    date: "March 2024 - Jul 2024",
-    points: [
-      "Developed and backtested over 10 quantitative trading strategies (alphas) using historical data and Python pyfolio, backtrader, yfinance libraries, with return of over 70\% and a Sharpe ratio exceeding 3.0 across multiple strategies.",
-      "Constructed diversifed portfolio with over 10 stocks in the US market, including prominent tickers (NVDA, AAPL, etc.) and gained over \$300 profit with original \$700 fund invested through online broker.",
+      "Developed and optimized algorithmic solutions for product profiling by creating a new algorithm that utilizes an embedding model for candidate retrieval, further enhanced by fine-tuning with a Siamese network using triplet loss, achieving a 95\% accuracy rate for the top 30 retrieved candidates.",
+      "Integrated and deployed the attribute normalization service across the entire attribute service, constructing thrift files and connecting client and server to test performance and latency; achieved 87\% accuracy and improved the service's Queries Per Second (QPS) by 200\%.",
+      "Developed a pipeline leveraging the Multimodal Large Language Model (InternVL2) to align product categories, properties, and values across diverse e-commerce platforms, achieving 95\% alignment accuracy and a 0.94 F1 score.",
     ],
   },
   {
     title: "Machine Learning Intern",
-    company_name: "Thales Solution Asia",
+    company_name: "Thales Solutions Asia",
     icon: thales,
     iconBg: "#E6DEDD",
     date: "September 2023 - January 2024",
@@ -174,54 +220,27 @@ const experiences = [
     company_name: "Agency for Science, Technology and Research (A*STAR)",
     icon: astar,
     iconBg: "#FFFFFF",
-    date: "May 2023 - September 2023",
+    date: "May 2023 - August 2023",
     points: [
       "Researched project 'Question Tagging using Knowledge and Causal Inference' under guidance of Dr. Zhou Nina.",
       "Analyzed and evaluated Language Models (LLMs), including LLaMa, Alpaca-Lora, and RoBERTa, by conducting local loading and testing with personal data, which involved data cleaning and preprocessing.",
-      "Constructed text sentiment analysis model using Sentence-Transformer (SBERT) to map question text with outcomes and topics, achieved accuracy of 86%.",
-      "Fine-tuned pre-trained cross/bi-encoders to training models from scratch with customized data.",
+      "Analyzed text sentiment using Sentence-Transformer to map questions to outcomes and topics, achieved 86\% accuracy.",
     ],
   },
   {
-    title: "Student Research Assistant",
+    title: "Research Assistant",
     company_name: "Nanyang Technological University",
     icon: ntu,
     iconBg: "#FFFFFF",
-    date: "May 2023 - September 2023",
+    date: "March 2023 - May 2023",
     points: [
-      "Conducted onsite traffic data collection utilizing manual counting and video surveillance methodologies.",
       "Processed, analyzed, and annotated over 2000 images extracted from video footage in Pick-Up and Drop-Off zones.",
       "Enhanced the YOLOv5 architecture to output object bounding boxes and re-identification attributes by refactoring loss functions, data loaders, network configurations of YOLOv5, achieve over 80\% accuracy with 0.8 IoU threshold."
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was imposible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+const testimonials = [];
 
 const projects = [
   {
@@ -384,4 +403,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, education, testimonials, projects, navLinks };
