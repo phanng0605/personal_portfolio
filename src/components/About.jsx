@@ -47,11 +47,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled Machine Learning Engineer with experience in Python, C/C++, Java,
-        JavaScript and several languages, and expertise in libraries like PyTorch, Tensorflow, and
-        trading libraries such as yfinace, backtrader, qlib. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Please feel free to reach out to me to collaborate or just to connect!
+        I'm a skilled AI/ML Engineer currently at TikTok (ByteDance), with experience
+        in Python, C/C++, Java, JavaScript and several languages, and deep expertise in
+        Multimodal LLMs (MLLM), fine-tuning techniques (SFT, LoRA, GRPO, DAPO), and
+        libraries like PyTorch, TensorFlow, and LangChain. I specialize in building and
+        deploying production-grade ML pipelines for e-commerce and computer vision. I'm a
+        quick learner and collaborate closely with teams to create efficient, scalable
+        solutions that solve real-world problems. Please feel free to reach out to me to
+        collaborate or just to connect!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
